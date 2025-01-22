@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Nueva Página Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #074983, #00f2fe);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #f0f0f0;
+        }
+
+        .content {
+            text-align: center;
+            max-width: 800px;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            margin: 0 15px;
+            transition: color 0.3s;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            width: 100%;
+            font-size: 0.9rem;
+        }
+
+        .ai-text {
+            font-size: 1.5rem;
+            color: white;
+            margin: 20px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a Mi Página Web</h1>
+        <p>Explora, disfruta y comparte el poder de la Inteligencia Artificial.</p>
+    </header>
+
+    <div class="content">
+        <p class="ai-text">La inteligencia artificial está transformando el mundo, desde la automatización hasta las experiencias personalizadas. Únete al futuro hoy.</p>
+        <img src="https://profuturo.education/wp-content/uploads/2024/09/240927_PF-observatorio-IA-web-1.jpg" alt="Imagen representativa de IA">
+    </div>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <footer>
+        &copy; 2025 Mi Nueva Página Web. Todos los derechos reservados.
+    </footer>
+</body>
+<script>
+    // Animación de texto
+    const textElement = document.querySelector('.ai-text');
+    const messages = [
+        "Bienvenido al mundo de la IA.",
+        "Descubre cómo la tecnología puede mejorar tu vida.",
+        "El futuro está aquí, y es inteligente."
+    ];
+    let index = 0;
+
+    setInterval(() => {
+        textElement.textContent = messages[index];
+        index = (index + 1) % messages.length;
+    }, 5000);
+</script>
+</html>
